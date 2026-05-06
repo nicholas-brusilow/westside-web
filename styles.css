@@ -174,6 +174,64 @@ nav {
   margin-top: 0;
 }
 
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Josefin Sans', system-ui, sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6699C2;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  border: none;
+  cursor: pointer;
+  font-family: 'Josefin Sans', system-ui, sans-serif;
+  font-size: 1rem;
+}
+
+.form-result {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.form-result.success { color: #2e7d32; }
+.form-result.error   { color: #c62828; }
+
 /* Footer */
 footer {
   text-align: center;
