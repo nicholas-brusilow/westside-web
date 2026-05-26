@@ -1,3 +1,16 @@
+(function () {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (!slides.length) return;
+  let current = 0;
+  setInterval(function () {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    const video = slides[current].querySelector('video');
+    if (video) { video.currentTime = 0; video.play(); }
+  }, 7000);
+})();
+
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
