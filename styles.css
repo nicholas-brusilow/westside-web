@@ -30,8 +30,9 @@ nav {
 
 .logo {
   flex: 1;
-  font-size: 1.4rem;
   font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: 1.4rem;
   color: #6699C2;
 }
 
@@ -68,9 +69,11 @@ nav {
   padding: 6rem 2rem;
 }
 
-.hero-logo {
-  height: 119px;
-  width: auto;
+.hero-logo-text {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: 6rem;
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
@@ -322,8 +325,8 @@ footer {
     padding: 3rem 1.25rem;
   }
 
-  .hero-logo {
-    height: 80px;
+  .hero-logo-text {
+    font-size: 3.2rem;
   }
 
   .hero p {
