@@ -113,6 +113,7 @@ nav {
   font-size: 6rem;
   color: #fff;
   margin-bottom: 1rem;
+  -webkit-text-stroke: 3px #000;
 }
 
 .hero p {
