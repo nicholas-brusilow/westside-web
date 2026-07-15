@@ -2,12 +2,19 @@
   const slides = document.querySelectorAll('.hero-slide');
   if (!slides.length) return;
   let current = 0;
+
+  function playVideo() {
+    const video = slides[current].querySelector('video');
+    if (video) { video.currentTime = 0; video.play(); }
+  }
+
+  playVideo();
+
   setInterval(function () {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
-    const video = slides[current].querySelector('video');
-    if (video) { video.currentTime = 0; video.play(); }
+    playVideo();
   }, 7000);
 })();
 
