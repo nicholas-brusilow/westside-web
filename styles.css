@@ -122,6 +122,18 @@ nav {
   margin-bottom: 2rem;
 }
 
+.hero-content .hero-license {
+  margin: -1rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .hero-content .hero-license {
+    font-size: 0.75rem;
+  }
+}
+
 .btn {
   display: inline-block;
   background: #6699C2;
@@ -281,6 +293,10 @@ footer {
   border-top: 1px solid #e5e5e5;
   color: #888;
   font-size: 0.9rem;
+}
+
+footer p + p {
+  margin-top: 0.3rem;
 }
 
 /* Hamburger button — hidden on desktop */
